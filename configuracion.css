@@ -1,0 +1,119 @@
+#configuracion {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-main);
+  color: var(--text-dark);
+}
+
+#configuracion h2 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+#configuracion .config-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#configuracion label {
+  font-weight: bold;
+}
+
+#configuracion select,
+#configuracion input[type="checkbox"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#configuracion .config-btn {
+  background: var(--primary-color);
+  color: var(--text-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#configuracion .config-btn:hover {
+  background: var(--secondary-color);
+  color: var(--text-light);
+}
+
+/* Modo Oscuro */
+body.dark-mode #configuracion {
+  background: #222;
+  color: var(--text-light);
+}
+
+body.dark-mode #configuracion .config-btn {
+  background: var(--primary-color);
+  color: var(--text-dark);
+}
+
+body.dark-mode #configuracion .config-btn:hover {
+  background: var(--secondary-color);
+  color: var(--text-light);
+}
+
+/* === CONTRASTE ALTO === */
+body.high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+body.high-contrast * {
+  color: #fff !important;
+}
+
+/* === Cajas claras mantienen texto negro === */
+body.high-contrast .formulario,
+body.high-contrast .formulario * {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+body.high-contrast .alquiler-card,
+body.high-contrast .alquiler-card * {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+body.high-contrast .config-panel,
+body.high-contrast .config-panel * {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+body.high-contrast .inicio-contenido,
+body.high-contrast .inicio-contenido * {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* === Submenús en negro === */
+body.high-contrast nav ul ul {
+  background-color: #000 !important;
+}
+
+body.high-contrast nav ul ul a {
+  color: #fff !important;
+}
+
+body.high-contrast nav ul ul li a:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+`` body.high-contrast .formulario,
+body.high-contrast .formulario * {
+  color: #000 !important; /* Texto NEGRO */
+  background-color: #fff !important; /* Fondo BLANCO */
+}

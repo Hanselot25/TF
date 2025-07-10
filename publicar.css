@@ -1,0 +1,64 @@
+#publicar,
+#foro,
+#misPublicaciones {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#publicar h2,
+#foro h2,
+#misPublicaciones h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#publicar .campo,
+#foro .filtro-foro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#publicar input,
+#publicar select,
+#publicar textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.config-btn {
+  background: var(--secondary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.config-btn:hover {
+  background: var(--primary-color);
+  color: var(--text-dark);
+}
+
+.publicacion {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #publicar,
+  #foro,
+  #misPublicaciones {
+    padding: 1rem;
+  }
+}
