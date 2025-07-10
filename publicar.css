@@ -62,3 +62,101 @@
     padding: 1rem;
   }
 }
+
+/* === MODO OSCURO: Foro === */
+body.dark-mode #foro {
+  background: #222;
+  color: #eee;
+}
+
+body.dark-mode #foro h3,
+body.dark-mode #foro h4,
+body.dark-mode #foro label {
+  color: #fff;
+}
+
+body.dark-mode #foro select,
+body.dark-mode #foro input {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .alquiler-card {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* === MODO OSCURO: Publicar === */
+body.dark-mode #publicar {
+  background: #222;
+  color: #eee;
+}
+
+body.dark-mode #publicar label {
+  color: #fff;
+}
+
+body.dark-mode #publicar input,
+body.dark-mode #publicar textarea,
+body.dark-mode #publicar select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode #publicar .config-btn {
+  background: #444;
+  color: #fff;
+}
+
+body.dark-mode #publicar .config-btn:hover {
+  background: #666;
+}
+
+/* === CONTRASTE ALTO === */
+body.high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+body.high-contrast *,
+body.high-contrast select,
+body.high-contrast input,
+body.high-contrast textarea {
+  color: #fff !important;
+  background: #000 !important;
+}
+
+/* Mantén campos de formularios legibles */
+body.high-contrast #publicar,
+body.high-contrast #publicar * {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+body.high-contrast #foro,
+body.high-contrast #foro * {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* Mantén estilo cards */
+body.high-contrast .alquiler-card,
+body.high-contrast .alquiler-card * {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+body.high-contrast #listaEstudiantes li {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* Ajusta botón de filtro */
+body.high-contrast .filtro button {
+  background: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff;
+}
